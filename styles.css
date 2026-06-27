@@ -282,8 +282,12 @@ figcaption {
   max-width: 760px;
 }
 
-.contact .button {
+.contact-actions {
   margin-top: 26px;
+}
+
+.contact-actions .button {
+  margin-top: 0;
 }
 
 .footer {
