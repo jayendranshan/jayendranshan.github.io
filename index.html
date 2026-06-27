@@ -3,85 +3,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal bio page for Jayendran Shanmugam.">
-    <title>Jayendran Shanmugam</title>
+    <meta
+      name="description"
+      content="Personal bio and blog home for Jayendran Shanmugam."
+    >
+    <title>Jayendran Shanmugam | Personal Blog</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page-shell">
-      <section class="intro" aria-labelledby="page-title">
-        <div class="profile">
-          <img
-            class="avatar"
-            src="https://avatars.githubusercontent.com/u/8661873?v=4"
-            alt="Jayendran Shanmugam"
-            width="160"
-            height="160"
-          >
-          <div>
-            <p class="eyebrow">Personal Blog</p>
-            <h1 id="page-title">Jayendran Shanmugam</h1>
-            <p class="tagline">Builder, technologist, and thoughtful problem solver based in the United States.</p>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Jayendran Shanmugam home">JS</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#writing">Writing</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="kicker">Personal blog</p>
+          <h1 id="page-title">Jayendran Shanmugam</h1>
+          <p class="lede">
+            A home base for notes, experiments, and practical ideas across
+            technology, product thinking, and everyday problem solving.
+          </p>
+          <div class="actions" aria-label="Profile links">
+            <a class="button primary" href="https://github.com/jayendranshan">GitHub</a>
+            <a class="button" href="#writing">Latest Notes</a>
           </div>
         </div>
+        <figure class="portrait-wrap">
+          <img
+            class="portrait"
+            src="https://avatars.githubusercontent.com/u/8661873?v=4"
+            alt="Jayendran Shanmugam"
+            width="320"
+            height="320"
+          >
+          <figcaption>Based in the United States</figcaption>
+        </figure>
+      </section>
 
-        <div class="intro-copy">
-          <p>
-            I work at the intersection of technology, product thinking, and practical execution. This site is a
-            small home base for notes, ideas, experiments, and the projects I am exploring.
-          </p>
-          <p>
-            I am currently connected with Edenred USA and use this space to share learning, technical reflections,
-            and occasional updates from the things I am building.
-          </p>
+      <section id="about" class="section two-column" aria-labelledby="about-title">
+        <div>
+          <p class="kicker">About</p>
+          <h2 id="about-title">Building useful things, then writing down what mattered.</h2>
         </div>
-
-        <div class="actions" aria-label="Profile links">
-          <a class="button primary" href="https://github.com/jayendranshan">GitHub Profile</a>
-          <a class="button" href="https://github.com/jayendranshan/jayendranshan.github.io">Site Source</a>
+        <div class="stack">
+          <p>
+            This page is a starting point for a personal site: a place to share
+            short posts, link to projects, and keep a lightweight public profile.
+          </p>
+          <p>
+            Replace this sample copy with a sharper bio, a few favorite topics,
+            and links to the work you want visitors to see first.
+          </p>
         </div>
       </section>
 
-      <section class="content-grid" aria-label="Blog sections">
-        <article>
-          <p class="section-kicker">Now</p>
-          <h2>What I am focused on</h2>
-          <p>
-            Building reliable systems, sharpening my technical judgment, and turning useful ideas into working
-            products.
-          </p>
-        </article>
+      <section id="writing" class="section" aria-labelledby="writing-title">
+        <div class="section-heading">
+          <p class="kicker">Writing</p>
+          <h2 id="writing-title">Sample notes</h2>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <p class="post-date">June 2026</p>
+            <h3>Why small automation wins compound</h3>
+            <p>
+              A placeholder post about turning repeated chores into reliable
+              systems that quietly save time.
+            </p>
+            <a href="#" aria-label="Read Why small automation wins compound">Read note</a>
+          </article>
+          <article class="post-card">
+            <p class="post-date">June 2026</p>
+            <h3>Keeping technical projects lightweight</h3>
+            <p>
+              A sample draft on choosing simple tools, clear defaults, and
+              maintainable workflows.
+            </p>
+            <a href="#" aria-label="Read Keeping technical projects lightweight">Read note</a>
+          </article>
+          <article class="post-card">
+            <p class="post-date">June 2026</p>
+            <h3>Notes from the workbench</h3>
+            <p>
+              A flexible space for quick updates, useful links, experiments,
+              and lessons learned.
+            </p>
+            <a href="#" aria-label="Read Notes from the workbench">Read note</a>
+          </article>
+        </div>
+      </section>
 
-        <article>
-          <p class="section-kicker">Writing</p>
-          <h2>Latest notes</h2>
-          <ul class="post-list">
-            <li>
-              <a href="#">Starting this personal blog</a>
-              <span>A first note about creating a home for ideas and updates.</span>
-            </li>
-            <li>
-              <a href="#">Projects I am exploring</a>
-              <span>A running list of technical experiments and lessons learned.</span>
-            </li>
-          </ul>
-        </article>
+      <section id="projects" class="section two-column" aria-labelledby="projects-title">
+        <div>
+          <p class="kicker">Projects</p>
+          <h2 id="projects-title">Things worth pointing at.</h2>
+        </div>
+        <div class="project-list">
+          <a class="project-row" href="https://github.com/jayendranshan">
+            <span>
+              <strong>GitHub Profile</strong>
+              <small>Public repositories and experiments</small>
+            </span>
+            <span aria-hidden="true">-&gt;</span>
+          </a>
+          <a class="project-row" href="#contact">
+            <span>
+              <strong>Personal Site</strong>
+              <small>This GitHub Pages site, ready to customize</small>
+            </span>
+            <span aria-hidden="true">-&gt;</span>
+          </a>
+        </div>
+      </section>
 
-        <article>
-          <p class="section-kicker">About</p>
-          <h2>Quick details</h2>
-          <dl class="details">
-            <div>
-              <dt>Location</dt>
-              <dd>United States</dd>
-            </div>
-            <div>
-              <dt>Company</dt>
-              <dd>Edenred USA</dd>
-            </div>
-          </dl>
-        </article>
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <p class="kicker">Contact</p>
+        <h2 id="contact-title">Want to connect?</h2>
+        <p>
+          Add your preferred email, LinkedIn, resume, or project links here.
+          For now, GitHub is the main public link.
+        </p>
+        <a class="button primary" href="https://github.com/jayendranshan">github.com/jayendranshan</a>
       </section>
     </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Jayendran Shanmugam. Hosted on GitHub Pages.</p>
+    </footer>
   </body>
 </html>
